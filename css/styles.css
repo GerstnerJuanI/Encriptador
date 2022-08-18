@@ -1,13 +1,28 @@
 html{
+    flex-wrap: nowrap;
     background-color:  #E5E5E5;
-    position:fixed;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
 }
 header{
     position:fixed;
     width: 375px;
-    height: 96px;
+    /* height: 96px; */
     left: 0px;
     top: 0px;
+}
+.bg{
+    display: block;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 0px 0px 16px 16px;
 }
 #top{
     position: absolute;
@@ -16,30 +31,28 @@ header{
     top: 25%;
     bottom: 25%;
 }
-.bg{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    border-radius: 0px 0px 16px 16px;
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .formTexto{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 40vh;
 }
 
 .inputText{
-    position: absolute;
-    width: 343px;
+    /* width: 343px;
     height: 48px;
-    left: 16px;
-    top: 152px;
+    left: 16px; 
+    top: 152px;  */
 
     font-family: 'Inter';
     font-style: normal;
@@ -67,7 +80,7 @@ header{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 24px;
+    gap: 24px; 
 
 position: absolute;
 
@@ -92,8 +105,8 @@ order: 0;
 align-self: stretch;
 flex-grow: 0;
 
-width: 295px;
-height: 19px;
+/* width: 295px;
+height: 19px; */
 
 font-family: 'Inter';
 font-style: normal;
@@ -113,8 +126,8 @@ order: 1;
 align-self: stretch;
 flex-grow: 0;
 
-width: 295px;
-height: 19px;
+/* width: 295px;
+height: 19px; */
 
 font-family: 'Inter';
 font-style: normal;
@@ -124,4 +137,21 @@ line-height: 19px;
 text-align: center;
 
 color: #0A3871;
+}
+
+.textodes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px; 
+    gap: 32px; 
+}
+.textareawhite{    
+    width: 327px;
+    height: 186px;
+    left: 24px;
+    /* top: 707px; */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }

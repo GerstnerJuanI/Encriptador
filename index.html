@@ -8,32 +8,40 @@
     <title>Encriptador</title>
     <!--CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/stylesAux.css" />
     <!--JS-->
     <script src="https://kit.fontawesome.com/2d7beb3640.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <div class="bg">
-            <p id="top" class="logo">
-                <img src="logo/vector.png">
-            </p>
-        </div>
+            <nav id="top" class="logo">
+                <img src="logo/vector.png" height="40px" width="25px">
+            </nav>
     </header>
     <main>
         <section class="formTexto">
-            <input type="text" class="inputText" id="ingreseTexto" value="Ingrese el texto aqui" >
+            <input id="inputEncrip" class="inputs" type="text"  id="ingreseTexto" value="Ingrese el texto aqui">
+            
+            <label class="labels" for="inputEncrip"><span><img src="logo/Vector-excla.png" alt=""></span> Solo letras minúsculas y sin
+                acentos</label>
         </section>
-        <section class="subTitulos">
-            <p class="subTexto"> <span><img  src="logo/Vector-excla.png" alt=""></span> Solo letras minúsculas y sin acentos</p>
-        </section>
-        <section class="botones">
-            <a class="boton" id="boton1" href="">Encriptar</a>
-            <a class="boton" id="boton2" href="">Desencriptar</a>
-        </section>
+            
+            <section class="subTitulos">
+            </section>
+            <section class="botones">
+                <a class="boton" id="boton1" href="">Encriptar</a>
+                <a class="boton" id="boton2" href="">Desencriptar</a>
+            </section>
+            <section class="rectBlanco">
+                <img src="logo/noEncontrado2.png" alt="">
+                <textarea hidden class="textareawhite" name="desencriptado" id="textodesc" cols="30"
+                    rows="10"></textarea>
+            </section>
     </main>
     <footer>
-
+        <span>Gerstner Juan Ignacio</span>
     </footer>
 </body>
+
 </html>
