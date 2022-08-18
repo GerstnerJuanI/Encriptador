@@ -21,27 +21,44 @@
     </header>
     <main>
         <section class="formTexto">
-            <input id="inputEncrip" class="inputs" type="text"  id="ingreseTexto" value="Ingrese el texto aqui">
-            
+            <textarea class="inputs" name="inputEncrip" id="inputEncrip" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             <label class="labels" for="inputEncrip"><span><img src="logo/Vector-excla.png" alt=""></span> Solo letras minúsculas y sin
-                acentos</label>
+                acentos
+            </label>
         </section>
-            
-            <section class="subTitulos">
-            </section>
-            <section class="botones">
-                <a class="boton" id="boton1" href="">Encriptar</a>
-                <a class="boton" id="boton2" href="">Desencriptar</a>
-            </section>
-            <section class="rectBlanco">
-                <img src="logo/noEncontrado2.png" alt="">
-                <textarea hidden class="textareawhite" name="desencriptado" id="textodesc" cols="30"
+        <section class="botones">
+                <a class="boton" id="boton1" href="#rectanguloBlanco">Encriptar</a>
+                <a class="boton" id="boton2" href="#">Desencriptar</a>
+        </section>
+        <section id="rectanguloBlanco" class="rectBlanco">
+                <img id="img-texto" class="textareawhite"  src="logo/horizontal.png" alt="">
+                <textarea class="textareawhite" name="desencriptado" id="textodesc" cols="30"
                     rows="10"></textarea>
-            </section>
+        </section>
+        
     </main>
     <footer>
-        <span>Gerstner Juan Ignacio</span>
+        <p>Gerstner Juan Ignacio</p>
     </footer>
+    <script>
+        window.addEventListener('load', init, false);
+        function init() {
+            let img = document.querySelector('#img-texto');
+            let textarea = document.querySelector('#textodesc');
+            img.style.display= 'block';
+            textarea.style.display = 'none';
+            let boton = document.querySelector('#boton1');
+            boton.addEventListener('click', function (e) {
+                if(img.style.display === 'block' && textarea.style.display === 'none'){
+                    img.style.display = 'none';
+                    textarea.style.display = 'block';
+                }else{
+                    img.style.display= 'block';
+                    textarea.style.display= 'none';
+                }
+            }, false);
+        }
+    </script>
 </body>
 
 </html>
