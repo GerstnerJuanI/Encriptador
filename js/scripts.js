@@ -23,9 +23,6 @@ function init() {
     boton1.addEventListener('click',encriptar,false);
 };
 
-function mostrarImagen() {
-    
-}
 function encriptar(e) {
     e.preventDefault();
     textodesc.value = '';
