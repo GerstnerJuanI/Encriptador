@@ -30,10 +30,13 @@
                 <a class="boton" id="boton1" href="#rectanguloBlanco">Encriptar</a>
                 <a class="boton" id="boton2" href="#">Desencriptar</a>
         </section>
-        <section id="rectanguloBlanco" class="rectBlanco">
-                <img id="img-texto" class="textareawhite"  src="logo/horizontal.png" alt="">
-                <textarea class="textareawhite" name="desencriptado" id="textodesc" cols="30"
+        <section class="desencriptado" id="rectanguloBlanco" >
+                <img id="img-texto"   src="logo/Frame 5.png" alt="">
+                <div id="respuesta" class="rectBlanco">
+                    <textarea class="textareawhite" name="desencriptado" id="textodesc" cols="30"
                     rows="10"></textarea>
+                    <button onclick="copyToClipBoard()" id="btncopy" class="boton">Copiar</button>
+                </div>
         </section>
         
     </main>

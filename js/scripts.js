@@ -1,15 +1,16 @@
 let img = document.querySelector('#img-texto');
-let textarea = document.querySelector('#textodesc');
+let textarea = document.querySelector('#respuesta');
+
 let boton1 = document.querySelector('#boton1');
 let boton2 = document.querySelector('#boton2');
 let textoSinEnc = document.getElementById('inputEncrip');
 let textodesc = document.getElementById('textodesc');
+
 window.addEventListener('load', init, false);
 
 function init() {
     img.style.display = 'block';
     textarea.style.display = 'none';
-
     boton1.addEventListener('click', function (e) {
         e.preventDefault();
         img.style.display = 'none';
@@ -80,6 +81,16 @@ function desencriptar(e) {
         textodesc.value = 'SOLO SE PERMITEN LETRAS MINUSCULAS! Intentelo nuevamente.';
         return;
     }
+}
+
+function copyToClipBoard() {
+
+    var content = document.getElementById('textodesc');
+    
+    content.select();
+    document.execCommand('copy');
+
+    alert("Copiado");
 }
 // texto de prueba:
 //fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober
